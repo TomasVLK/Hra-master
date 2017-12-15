@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.tomas.projekt.Settings"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Obtiznost"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Obtiznost"/>
+
+        <View
+            android:background="@android:color/darker_gray"
+            android:layout_width = "fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="3dip"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrace"
+            android:id="@+id/cb_zvuk"
+            android:layout_marginTop="5dp"
+            android:checked="false" />
+        <View
+            android:background="@android:color/darker_gray"
+            android:layout_width = "fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="3dip"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Barva_hada"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Spinner
+            android:id="@+id/Barva_hada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Barva_hada_ocas"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Spinner
+            android:id="@+id/Barva_hada_ocas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@android:color/darker_gray"
+            android:layout_width = "fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="3dip"/>
+
+        <Button
+            android:id="@+id/btn_smazat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:minHeight="50dp"
+            android:onClick="smazat"
+            android:text="smazat" />
+
+        <Button
+            android:id="@+id/btn_ulozit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:minHeight="50dp"
+            android:onClick="ulozit"
+            android:text="ulozit" />
+
+    </LinearLayout >
+</ScrollView>
